@@ -1,14 +1,36 @@
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <title>Alan's Portfolio</title>
+        <link rel="stylesheet" href="./styles.css">
 
-<!-- TODO: Replace Mr. Miyamoto's name with yours -->
-<h1>The Portfolio of Alan Tommy</h1>
+        <script defer src="scripts/page.js"></script>
+    </head>
+    <body>
+        <div id="banner">
+            <img src="./images/shark.png" alt="shark.png">
+            <h1>The Portfolio of Alan Tommy</h1>
+        </div>
 
-<h2>Projects</h2>
+        <div id="tab-buttons-container">
+            <div class="tab-button active" id="Home-button">Home</div>
+            <div class="tab-button" id="The Legend Of Zelda-button">The Legend Of Zelda</div>
+        </div>
 
-<!-- TODO: Erase one of these two. Replace the 'href' link below with a link to your WebGL build page. -->
-<ul>
-<li><a href="https://cdn.destructoid.com//ul/317824-zelda%20memes.jpg">The Legend of Zelda (Unity Remaster)</a></li>
-</ul>
+        <div id="tab-content-container">
 
-<!-- TIP: Rename this file "index.html", and it will become the default landing page whenever someone navigates their browser to your domain. -->
+            <div class="tab-content active" id="Home-content">
+                <h2>Home</h2>
+                <p>This is my portfolio. Click on the tabs to learn more about my projects.</p>
+            </div>
+
+            <div class="tab-content" id="The Legend Of Zelda-content">
+                <h2>The Legend of Zelda (Unity Remaster)</h2>
+                <a href="https://atommy3.itch.io/the-legend-of-zelda-dungeon-1">Link to web build</a>
+            </div>
+        </div>
+    </body>
 </html>
