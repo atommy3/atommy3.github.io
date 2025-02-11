@@ -3,37 +3,38 @@ body {
     margin: 0px;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
-#banner {
+.banner {
     display: flex;
     align-items: center; /* Align items vertically */
     margin: 0px 20px 0px 20px;
 }
 
-#banner img {
+.banner-img {
     height: 40px;
 }
 
-#banner h1 {
+.banner-text {
     margin: 10px;   
 }
 
-#tab-buttons-container {
-    margin: 0px 20px 0px 20px;
+.tab-buttons-container {
+    white-space: nowrap;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 0px 20px 0px 20px;
+
+    border: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: rgb(9, 147, 183);
 }
 
 .tab-button {
     cursor: pointer;
+    overflow: hidden;
     margin-right: 10px;
     border-width: 0px;      /* default for buttons is 2px */
     border-radius: 5px 5px 0px 0px;
     padding: 10px;
-
-    background-color: lightgray;
 }
 
 .tab-button.active {
@@ -42,10 +43,6 @@ body {
 
 .tab-content {
     display: none;
-    border-style: solid;
-    border-width: 4px 0px 0px 0px;
-    border-radius: 0px 0px 10px 10px;
-    border-color: rgb(9, 147, 183);
     padding: 0px 25px 0px 25px;
 }
 

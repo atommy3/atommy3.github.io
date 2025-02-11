@@ -1,54 +1,61 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-        <title>Alan's Portfolio</title>
-        <link rel="stylesheet" href="./styles.css">
 
-        <script defer src="./scripts/page.js"></script>
-    </head>
-    <body>
-        <div id="banner">
-            <img src="./images/shark.png" alt="shark.png">
-            <h1>The Portfolio of Alan Tommy</h1>
+<head>
+    <title>Alan's Portfolio</title>
+    <!-- JS -->
+    <script src='scripts/jquery.min.js'></script>
+    <script src='scripts/page.js'></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner">
+        <img class="banner-img" src="./images/shark.png" alt="shark.png">
+        <h1 class="banner-text">The Portfolio of Alan Tommy</h1>
+    </div>
+
+    <!-- tab buttonss -->
+    <div class="tab-buttons-container">
+        <button class="tab-button active" id="Home-button">Home</button>
+        <button class="tab-button" id="The-Legend-Of-Zelda-button">The Legend Of Zelda</button>
+    </div>
+
+    <!-- tab contents -->
+    <div class="tab-content-container">
+
+        <div class="tab-content active" id="Home-content">
+            <h2>Home</h2>
+            <p>This is my portfolio. Click on the tabs to learn more about my projects.</p>
         </div>
 
-        <div id="tab-buttons-container">
-            <button class="tab-button active" id="Home-button">Home</button>
-            <button class="tab-button" id="The Legend Of Zelda-button">The Legend Of Zelda</button>
-        </div>
-
-        <div id="tab-content-container">
-
-            <div class="tab-content active" id="Home-content">
-                <h2>Home</h2>
-                <p>This is my portfolio. Click on the tabs to learn more about my projects.</p>
+        <div class="tab-content" id="The-Legend-Of-Zelda-content">
+            <div class="row">
+                <h2>The Legend of Zelda (Unity Remaster)</h2>
             </div>
+            
+            <img src="./images/zeldalink.png">
 
-            <div class="tab-content" id="The Legend Of Zelda-content">
-                <div class="row">
-                    <h2>The Legend of Zelda (Unity Remaster)</h2>
-                </div>
-                
-                <img src="./images/zeldalink.png">
+            <p><a href="https://atommy3.itch.io/the-legend-of-zelda-dungeon-1">Link to web build</a></p>
+            <p>Don't forget to play the custom level by pressing the "4" key!</p>
 
-                <p><a href="https://atommy3.itch.io/the-legend-of-zelda-dungeon-1">Link to web build</a></p>
-                <p>Don't forget to play the custom level by pressing the "4" key!</p>
+            <h3>My contributions</h3>
+            <p>I helped with the player movement, sword mechanics, some of the enemies, and the custom level design.</p>
 
-                <h3>My contributions</h3>
-                <p>I helped with the player movement, sword mechanics, some of the enemies, and the custom level design.</p>
-
-                <h3>Technologies used</h3>
-                <ul>
-                    <li>Unity Game Engine</li>
-                    <li>C# Programming Language</li>
-                    <li>Unity Version Control (Formerly Plastic SCM)</li>
-                    <li>Jira for Project Management</li>
-                    <li>Discord for Organization</li>
-                </ul>
-            </div>
+            <h3>Technologies used</h3>
+            <ul>
+                <li>Unity Game Engine</li>
+                <li>C# Programming Language</li>
+                <li>Unity Version Control (Formerly Plastic SCM)</li>
+                <li>Jira for Project Management</li>
+                <li>Discord for Organization</li>
+            </ul>
         </div>
-    </body>
+
+    </div>
+
+</body>
+
 </html>

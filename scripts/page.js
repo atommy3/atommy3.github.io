@@ -1,23 +1,29 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const tabButtons = document.querySelectorAll("#tab-buttons-container .tab-button");
+// global variables
 
-    tabButtons.forEach(tabButton => {
-        tabButton.onclick = () => toggleTab(tabButton.innerHTML);
-        console.log(tabButton.innerHTML)
-    });
+// main
+$(document).ready(function () {
+    // selectors
+    tabButtons = $('.tab-button');
+    tabContents = $('.tab-content');
 });
 
+// event listeners
+$("html").on("click", ".tab-button", function(event){
+    const tabName = $(this).text().replace(/ /g, '-');
+    toggleTab(tabName);
+});
+
+// helper functions
 function toggleTab(tabName) {
-    const selectedTabButton = document.getElementById(`${tabName}-button`);
-    const selectedTabContent = document.getElementById(`${tabName}-content`); 
-    const tabButtons = document.querySelectorAll('.tab-button');
-    tabButtons.forEach(tabButton => {
-        tabButton.classList.remove('active');
-    });
-    const tabContents = document.querySelectorAll('.tab-content');
-    tabContents.forEach(tabContent => {
-        tabContent.classList.remove('active');
-    });
-    selectedTabButton.classList.add('active');
-    selectedTabContent.classList.add('active');
+    const selectedTabButton = $(`#${tabName}-button`);
+    const selectedTabContent = $(`#${tabName}-content`);
+
+    console.log(selectedTabButton);
+    console.log(selectedTabContent)
+
+    tabButtons.removeClass("active");
+    tabContents.removeClass("active");
+
+    selectedTabButton.addClass("active");
+    selectedTabContent.addClass("active");
 }
