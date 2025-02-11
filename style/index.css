@@ -3,7 +3,18 @@ body {
     margin: 0px;
 }
 
-.banner {
+#banner {
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    width: 100%;
+
+    z-index: 1;
+    background-color: white;
+}
+
+.banner-header {
     display: flex;
     align-items: center; /* Align items vertically */
     margin: 0px 20px 0px 20px;
@@ -17,7 +28,7 @@ body {
     margin: 10px;   
 }
 
-.tab-buttons-container {
+#tab-buttons-container {
     white-space: nowrap;
     max-width: 100%;
     overflow-x: auto;
@@ -26,6 +37,8 @@ body {
     border: solid;
     border-width: 0px 0px 4px 0px;
     border-color: rgb(9, 147, 183);
+
+    z-index: 0;
 }
 
 .tab-button {
@@ -39,6 +52,11 @@ body {
 
 .tab-button.active {
     background-color: rgb(9, 147, 183)
+}
+
+#tab-content-container {
+    position: absolute;
+    top: 20%;
 }
 
 .tab-content {
