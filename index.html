@@ -2,7 +2,7 @@
 
 <head>
     <title>Alan's Portfolio</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <!-- JS -->
     <script src='scripts/jquery.min.js'></script>
     <script defer src='scripts/page.js'></script>
@@ -15,16 +15,19 @@
     <!-- banner -->
     <div id="banner">
         <div class="banner-header">
-            <img class="banner-img" src="./images/shark.png" alt="shark.png">
+            <img class="banner-img" src="./assets/shark.png" alt="shark.png">
             <h1 class="banner-text">Alan Tommy's Portfolio</h1>
         </div>
 
         <!-- tab buttons -->
         <div id="tab-buttons-container">
             <button class="tab-button active" id="Home-button">Home</button>
-            <button class="tab-button" id="The-Legend-Of-Zelda-button">The Legend Of Zelda</button>
-            <button class="tab-button" id="Trailblaze-button">Trailblaze</button>
+            <button class="tab-button" id="ROTC-Wargame-button">ROTC Wargame</button>
             <button class="tab-button" id="Final-Fumes-button">Final Fumes</button>
+            <button class="tab-button" id="Ross-Datathon-button">Ross Datathon</button>
+            <button class="tab-button" id="Move-Suggester-button">Move Suggester</button>
+            <button class="tab-button" id="Network-File-Server-button">Network File Server</button>
+            <button class="tab-button" id="My-Notes-button">My Notes</button>
         </div>
     </div>
 
@@ -32,49 +35,14 @@
     <div id="tab-content-container">
 
         <div class="tab-content active" id="Home-content">
-            <h2>Home</h2>
-            <p>This is my portfolio. Click on the tabs to learn more about my projects.</p>
+            <h2>Welcome to my Portfolio!</h2>
+            <p>I hold a Bachelor's degree in Computer Science from the University of Michigan. I enjoy programming, data analytics, and application development.</p>
+            <p>Below is my resume. Click on the other tabs to learn more about some of my projects that I wanted to highlight.</p>
+            <embed src="./assets/resume.pdf" width="800px" height="1050px" />
         </div>
 
-        <div class="tab-content" id="The-Legend-Of-Zelda-content">
-            <h2>The Legend of Zelda (Unity Remaster)</h2>
-            
-            <img src="./images/zeldalink.png">
-
-            <p><a href="https://atommy3.itch.io/the-legend-of-zelda-dungeon-1">Link to web build</a></p>
-            <p>Don't forget to play the custom level by pressing the "4" key!</p>
-
-            <h3>My contributions</h3>
-            <p>I helped with the player movement, sword mechanics, some of the enemies, and the custom level design.</p>
-
-            <h3>Technologies used</h3>
-            <ul>
-                <li>Unity Game Engine</li>
-                <li>C# Programming Language</li>
-                <li>Unity Version Control (Formerly Plastic SCM)</li>
-                <li>Jira for Project Management</li>
-                <li>Discord for Organization</li>
-            </ul>
-        </div>
-
-        <div class="tab-content" id="Trailblaze-content">
-            <h2>Trailblaze</h2>
-            
-            <img src="./images/trailblaze.png" width="50%">
-
-            <p><a href="https://atommy3.itch.io/trailblaze">Link to web build</a></p>
-            <p>This is a 2 player game! Maneuver your vehicle and corner your opponent into colliding into your trail.</p>
-
-            <h3>My contributions</h3>
-            <p>I was the sole developer of this game. I drew all the sprites and wrote the code for the game.</p>
-
-            <h3>Technologies used</h3>
-            <ul>
-                <li>Unity Game Engine</li>
-                <li>C# Programming Language</li>
-                <li>Git Version Control</li>
-                <li>Jira for Project Management</li>
-            </ul>
+        <div class="tab-content" id="ROTC-Wargame-content">
+            <h2>ROTC Wargame</h2>
         </div>
 
         <div class="tab-content" id="Final-Fumes-content">
@@ -131,10 +99,25 @@
                 <li>Radio Font: https://www.fontspace.com/digital-7-font-f7087</li>
 
                 <li>Credit to ChatGPT for general assistance in bug fixes and code discussion.</li>
-
                 <li>Credit to ElevenLabs AI for voice acting.</li>
           
-        </ul>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="Ross-Datathon-content">
+            <h2>Ross Datathon</h2>
+        </div>
+
+        <div class="tab-content" id="Move-Suggester-content">
+            <h2>Move Suggester</h2>
+        </div>
+
+        <div class="tab-content" id="Network-File-Server-content">
+            <h2>Network File Server</h2>
+        </div>
+
+        <div class="tab-content" id="My-Notes-content">
+            <h2>My Notes</h2>
         </div>
 
     </div>
