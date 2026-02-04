@@ -30,7 +30,6 @@ body {
 }
 
 #tab-buttons-container {
-    white-space: nowrap;
     max-width: 100%;
 
     border-style: solid;
