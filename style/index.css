@@ -59,7 +59,7 @@ body {
 }
 
 .tab-button:hover {
-    filter: brightness(1.3); 
+    color: #4D4DE6
 }
 
 .tab-button.active {
@@ -71,25 +71,25 @@ body {
     border-color: #0000FF #0000FF white #0000FF;
 }
 .color2 {
-    border-color: #1500FF #1500FF white #1500FF;
+    border-color: #1900FF #1900FF white #1900FF;
 }
 .color3 {
-    border-color: #2B00FF #2B00FF white #2B00FF;
+    border-color: #3200FF #3200FF white #3200FF;
 }
 .color4 {
-    border-color: #4000FF #4000FF white #4000FF;
+    border-color: #4B00FF #4B00FF white #4B00FF;
 }
 .color5 {
-    border-color: #5600FF #5600FF white #5600FF;
+    border-color: #6400FF #6400FF white #6400FF;
 }
 .color6 {
-    border-color: #6B00FF #6B00FF white #6B00FF;
+    border-color: #7D00FF #7D00FF white #7D00FF;
 }
 .color7 {
-    border-color: #8100FF #8100FF white #8100FF;
+    border-color: #9600FF #9600FF white #9600FF;
 }
 .color8 {
-    border-color: #9600FF #9600FF white #9600FF;
+    border-color: #AF00FF #AF00FF white #AF00FF;
 }
 
 #banner-line {
@@ -107,12 +107,11 @@ body {
 
 #tab-content-container {
     position: absolute;
-    top: 20%;
 }
 
 .tab-content {
     display: none;
-    padding: 0px 25px 0px 25px;
+    padding: 20px 50px 50px 50px;
 }
 
 .tab-content.active {
