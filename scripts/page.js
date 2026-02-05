@@ -4,6 +4,7 @@
 // ids
 banner = $('#banner');
 tabButtonsContainer = $('#tab-buttons-container');
+bannerLine = $('#banner-line');
 tabContentContainer = $('#tab-content-container');
 
 // classes
@@ -28,6 +29,9 @@ function toggleTab(tabName) {
 
     selectedTabButton.addClass("active");
     selectedTabContent.addClass("active");
+
+    const borderColor = selectedTabButton.css('border-top-color');
+    bannerLine.css("background-color", borderColor);
 }
 
 function updateContentPosition() {

@@ -4,11 +4,11 @@ body {
 }
 
 #banner {
-    display: flex;
-    flex-direction: column;
-
     position: fixed;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
 
     z-index: 1;
     background-color: white;
@@ -25,29 +25,32 @@ body {
 }
 
 .banner-text {
-    margin: 10px;
-    color: #333399;
+    margin: 10px 0px 10px 0px;
+    color: black;
 }
 
 #tab-buttons-container {
+    display: flex;
+    flex-wrap: nowrap;
+
+    position: relative;
     max-width: 100%;
 
-    border-style: solid;
-    border-width: 0px 0px 4px 0px;
-    border-color: #0000FF;
     padding: 0px 20px 0px 20px;
 }
 
 .tab-button {
+    position: relative;
+    z-index: 1;
+
     cursor: pointer;
     display: inline-block;
     overflow: hidden;
-    margin: 0px 10px -4px 0px;
+    margin-right: 10px;
     
     border-radius: 8px 8px 0px 0px;
     border-style: solid;
     border-width: 4px;
-    border-color: #0000FF;
 
     background-color: white;
     padding: 10px;
@@ -60,9 +63,46 @@ body {
 }
 
 .tab-button.active {
+    z-index: 3;
     pointer-events: none;
+}
+
+.color1 {
+    border-color: #0000FF #0000FF white #0000FF;
+}
+.color2 {
+    border-color: #1500FF #1500FF white #1500FF;
+}
+.color3 {
+    border-color: #2B00FF #2B00FF white #2B00FF;
+}
+.color4 {
+    border-color: #4000FF #4000FF white #4000FF;
+}
+.color5 {
+    border-color: #5600FF #5600FF white #5600FF;
+}
+.color6 {
+    border-color: #6B00FF #6B00FF white #6B00FF;
+}
+.color7 {
+    border-color: #8100FF #8100FF white #8100FF;
+}
+.color8 {
+    border-color: #9600FF #9600FF white #9600FF;
+}
+
+#banner-line {
+    position: absolute;
+    z-index: 2;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
     
-    border-bottom-color: white;
+    content: '';
+    background-color: #0000FF;
 }
 
 #tab-content-container {
