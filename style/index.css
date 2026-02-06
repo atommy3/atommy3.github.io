@@ -3,6 +3,10 @@ body {
     margin: 0px;
 }
 
+figcaption {
+    margin-top: 10px;
+}
+
 #banner {
     position: fixed;
     width: 100%;
@@ -106,6 +110,7 @@ body {
 }
 
 #tab-content-container {
+    width: 100%;
     position: absolute;
 }
 
@@ -116,4 +121,21 @@ body {
 
 .tab-content.active {
     display: block;
+}
+
+.pdf {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 800 / 1050;
+}
+
+.video {
+    width: 100%;
+    max-width: 700px;
+    aspect-ratio: 560 / 315;
+}
+
+.image {
+    width: 100%;
+    max-width: 700px;
 }

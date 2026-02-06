@@ -1,146 +1,166 @@
 <html>
 
-<head>
-    <title>Alan Tommy's Portfolio</title>
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
-    <!-- JS -->
-    <script src='scripts/jquery.min.js'></script>
-    <script defer src='scripts/page.js'></script>
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="style/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <title>Alan Tommy's Portfolio</title>
+        <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+        <!-- JS -->
+        <script src='scripts/jquery.min.js'></script>
+        <script defer src='scripts/page.js'></script>
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <!-- banner -->
-    <div id="banner">
-        <div class="banner-header">
-            <h1 class="banner-text">Alan Tommy's Portfolio</h1>
+    <body>
+        <!-- banner -->
+        <div id="banner">
+            <div class="banner-header">
+                <h1 class="banner-text">Alan Tommy's Portfolio</h1>
+            </div>
+
+            <!-- tab buttons -->
+            <div id="tab-buttons-container">
+                <button class="tab-button color1 active" id="Home-button">Home</button>
+                <button class="tab-button color2" id="ROTC-Wargame-button">ROTC Wargame</button>
+                <button class="tab-button color3" id="Final-Fumes-button">Final Fumes</button>
+                <button class="tab-button color4" id="Ross-Datathon-button">Ross Datathon</button>
+                <button class="tab-button color5" id="Move-Suggester-button">Move Suggester</button>
+                <button class="tab-button color6" id="Network-File-Server-button">Network File Server</button>
+                <button class="tab-button color7" id="MDST-Mining-button">MDST Mining</button>
+                <button class="tab-button color8" id="My-Notes-button">My Notes</button>
+                <div id="banner-line"></div>
+            </div>
         </div>
 
-        <!-- tab buttons -->
-        <div id="tab-buttons-container">
-            <button class="tab-button color1 active" id="Home-button">Home</button>
-            <button class="tab-button color2" id="ROTC-Wargame-button">ROTC Wargame</button>
-            <button class="tab-button color3" id="Final-Fumes-button">Final Fumes</button>
-            <button class="tab-button color4" id="Ross-Datathon-button">Ross Datathon</button>
-            <button class="tab-button color5" id="Move-Suggester-button">Move Suggester</button>
-            <button class="tab-button color6" id="Network-File-Server-button">Network File Server</button>
-            <button class="tab-button color7" id="MDST-Mining-button">MDST Mining</button>
-            <button class="tab-button color8" id="My-Notes-button">My Notes</button>
-            <div id="banner-line"></div>
+        <!-- tab contents -->
+        <div id="tab-content-container">
+
+            <div class="tab-content active" id="Home-content">
+                <h2>Welcome to my Portfolio!</h2>
+
+                <p>I hold a Bachelor's degree in Computer Science from the University of Michigan. I enjoy programming, data analytics, and application development.</p>
+                <p>Below is my resume. Click on the other tabs to learn more about some of my projects that I want to highlight.</p>
+                <embed src="./assets/resume.pdf" class="pdf" />
+            </div>
+
+            <div class="tab-content" id="ROTC-Wargame-content">
+                <h2>University of Michigan ROTC Digital Wargame</h2>
+
+                <ul>
+                    <li><a href="https://army.rotc.umich.edu/activity/wargame/" target="_blank" rel="noopener noreferrer">About the Wargame</a></li>
+                    <li><a href="https://umichwargame.com/" target="_blank" rel="noopener noreferrer">Link to Wargame</a></li>
+                </ul>
+
+                <p>I collaborated primarily with Leo Intelisano and Jacob Tkaczyk on this project.</p>
+            </div>
+
+            <div class="tab-content" id="Final-Fumes-content">
+                <h2>Final Fumes (Video Game)</h2>
+                
+                <iframe src="https://www.youtube.com/embed/AQSIWIgwqFk" class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <ul>
+                    <li><a href="https://teddixon.itch.io/final-fumes" target="_blank" rel="noopener noreferrer">Link to web build</a></li>
+                </ul>
+
+                <p>I collaborated with Isaiah Richards, Jagger Pacheco, and Thomas Dixon on this project.</p>
+
+                <p>This project was the primary deliverable for EECS 494, Introduction To Video Game Development, an intense MDE course at the University of Michigan. We were tasked with creating a full-fledged video game as a team in about 8 weeks. From the start, our team was very ambitious. Here are a few things that set us apart from others:</p>
+                <ul>
+                    <li>We had only 4 members; most teams had 5</li>
+                    <li>We did not base our game off of any of our previous projects</li>
+                    <li>The game is 3D, and we made almost all of the assets ourselves</li>
+                    <li>Levels are procedurally generated</li>
+                </ul>
+                <p>I worked mainly on two of the monsters and creating some of the clutter and road tile assets.</p>
+
+                <h3>Technologies used</h3>
+                <ul>
+                    <li>Unity Game Engine</li>
+                    <li>C# Programming Language</li>
+                    <li>Unity Version Control (Formerly Plastic SCM)</li>
+                    <li>MagicaVoxel Software</li>
+                    <li>Jira for Project Management</li>
+                    <li>Python Programming Language (scripts to create in-game assets and audio)</li>
+                    <li>Audacity Software</li>
+                    <li>ElevenLabs AI Voice Software</li>
+                </ul>
+
+                <h3>Credits</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=FV4DxR7TGOY" target="_blank" rel="noopener noreferrer">Radio music</a> by SoulProdMusic</li>
+                    <li><a href="https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488" target="_blank" rel="noopener noreferrer">Quick Outline Effect</a> by Chris Nolet</li>
+                    <li><a href="https://davidevofficial.itch.io/voxeloptimizer" target="_blank" rel="noopener noreferrer">Voxel Optimization Tool</a> by Davidevofficial</li>
+                    <li><a href="https://pixabay.com/sound-effects/car-accident-real-interior-46387/" target="_blank" rel="noopener noreferrer">Car Crash Sound 1</a> by softwalls</li>
+                    <li><a href="https://pixabay.com/sound-effects/car-crash-edit-two-92001/" target="_blank" rel="noopener noreferrer">Car Crash Sound 2</a> by JD_Falotico</li>
+                    <li><a href="https://pixabay.com/sound-effects/diesel-truck-idling-frontwav-14418/" target="_blank" rel="noopener noreferrer">Car Idle Sound</a> by Ibirdfilm</li>
+                    <li><a href="https://www.cgtrader.com/free-3d-models/architectural/decoration/screaming-statue" target="_blank" rel="noopener noreferrer">Stalker (dark humanoid enemy) base model</a> by vsify</li>
+                    <li><a href="https://freesound.org/people/Artninja/sounds/733955/" target="_blank" rel="noopener noreferrer">Stalker (dark humanoid enemy) screech sound</a> by Artninja</li>
+                    <li><a href="https://www.cgtrader.com/free-3d-print-models/miniatures/other/torture-spider-3d-printer-torture-test" target="_blank" rel="noopener noreferrer">Lurker (spider enemy) base model</a> (link no longer works)</li>
+                    <li><a href="https://freesound.org/people/Garuda1982/sounds/539299/" target="_blank" rel="noopener noreferrer">Lurker (spider enemy) hiss sound</a> by Garuda1982</li>
+                    <li><a href="https://www.cadnav.com/3d-models/model-11252.html" target="_blank" rel="noopener noreferrer">Player vehicle base model</a></li>
+                    <li><a href="https://www.textstudio.com/" target="_blank" rel="noopener noreferrer">Main menu text tools</a> by TextStudio</li>
+                    <li><a href="https://www.textures4photoshop.com/tex/metal/old-rusted-metal-surface-texture.aspx#google_vignette" target="_blank" rel="noopener noreferrer">Main menu text material textures</a> by Textures4Photoshop</li>
+                    <li><a href="https://www.fonts4free.net/pixel-emulator-font.html" target="_blank" rel="noopener noreferrer">Hint font</a> by Pixel Sagas</li>
+                    <li><a href="https://www.fontspace.com/digital-7-font-f7087" target="_blank" rel="noopener noreferrer">Radio font</a> by Style-7</li>
+                    <li>Credit to Joseph Brown for main menu music (used with permission).</li>
+                    <li>Credit to ChatGPT for general assistance in bug fixes and code discussion.</li>
+                    <li>Credit to ElevenLabs AI for voice acting.</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="Ross-Datathon-content">
+                <h2>Michigan Ross Business+Tech Datathon (2024)</h2>
+
+                <figure>
+                    <img src="./assets/datathon.jpg" class="image" alt="datathon.png">
+                    <figcaption><i>Pictured from left to right: Julia Spilkin, Nolan Birkeland, Atul Gera, Makayla Beardsley, NaveenJohn Premkumar, Alan Tommy</i></figcaption>
+                </figure>
+                
+                <ul>
+                    <li><a href="https://businesstech.bus.umich.edu/blog/2024-datathon-competition-targets-carbon-emissions-with-data-driven-approaches/" target="_blank" rel="noopener noreferrer">University of Michigan Business+Tech Article</a></li>
+                    <li><a href="https://www.michigandaily.com/news/businesstech-hosts-seventh-annual-datathon/" target="_blank" rel="noopener noreferrer">The Michigan Daily Article</a></li>
+                </ul>
+
+                <p>I collaborated with Julia Spilkin, Nolan Birkeland, Atul Gera, Makayla Beardsley, and NaveenJohn Premkumar on this project.</p>
+            </div>
+
+            <div class="tab-content" id="Move-Suggester-content">
+                <h2>Discord Bot Battle Move Suggester</h2>
+
+                <iframe src="https://www.youtube.com/embed/GISEWVeABnk" class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                <ul>
+                    <li><a href="https://github.com/Racekid16/gachaSuggestMoves" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="Network-File-Server-content">
+                <h2>Multithreaded Network File Server</h2>
+
+                <p>I collaborated with Bennett Liyanto and NaveenJohn Premkumar on this project.</p>
+            </div>
+
+            <div class="tab-content" id="MDST-Mining-content">
+                <h2>MDST Reddit Data Mining and Sentiment Analysis</h2>
+
+                <ul>
+                    <li><a href="https://github.com/svkislenkov/f24mdst" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+                </ul>
+
+                <p>I collaborated with Andy Liang, Sergey Kislenkov, Toby Buckfire, and Vatsal Shah on this project.</p>
+            </div>
+
+            <div class="tab-content" id="My-Notes-content">
+                <h2>My Notes</h2>
+
+                <ul>
+                    <li><a href="https://github.com/Racekid16/University_of_Michigan_EECS_Lecture_Slides/tree/main/My%20miscellaneous%20notes" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+                </ul>
+            </div>
+
         </div>
-    </div>
 
-    <!-- tab contents -->
-    <div id="tab-content-container">
-
-        <div class="tab-content active" id="Home-content">
-            <h2>Welcome to my Portfolio!</h2>
-
-            <p>I hold a Bachelor's degree in Computer Science from the University of Michigan. I enjoy programming, data analytics, and application development.</p>
-            <p>Below is my resume. Click on the other tabs to learn more about some of my projects that I want to highlight.</p>
-            <embed src="./assets/resume.pdf" width="800px" height="1050px" />
-        </div>
-
-        <div class="tab-content" id="ROTC-Wargame-content">
-            <h2>University of Michigan ROTC Digital Wargame</h2>
-
-            <p><a href="https://umichwargame.com/" target="_blank" rel="noopener noreferrer">Link to website</a></p>
-        </div>
-
-        <div class="tab-content" id="Final-Fumes-content">
-            <h2>Final Fumes (Video Game)</h2>
-            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/AQSIWIgwqFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <p><a href="https://teddixon.itch.io/final-fumes" target="_blank" rel="noopener noreferrer">Link to web build</a></p>
-
-            <h3>About this Project</h3>
-            <p>I worked with 3 teammates on this project- Isaiah Richards, Jagger Pacheco, and Thomas Dixon.</p>
-
-            <p>This project was the primary deliverable for EECS 494, Introduction To Video Game Development, an intense MDE course at the University of Michigan. We were tasked with creating a full-fledged video game as a team in about 8 weeks. From the start, our team was very ambitious. Here are a few things that set us apart from others:</p>
-            <ul>
-                <li>We had only 4 members; most teams had 5</li>
-                <li>We did not base our game off of any of our previous projects</li>
-                <li>The game is 3D, and we made almost all of the assets ourselves</li>
-                <li>Levels are procedurally generated</li>
-            </ul>
-            <p>I worked mainly on two of the monsters and creating some of the clutter and road tile assets.</p>
-
-            <h3>Technologies used</h3>
-            <ul>
-                <li>Unity Game Engine</li>
-                <li>C# Programming Language</li>
-                <li>Unity Version Control (Formerly Plastic SCM)</li>
-                <li>MagicaVoxel Software</li>
-                <li>Jira for Project Management</li>
-                <li>Python Programming Language (scripts to create in-game assets and audio)</li>
-                <li>Audacity Software</li>
-                <li>ElevenLabs AI Voice Software</li>
-            </ul>
-
-            <h3>Credits</h3>
-            <ul>
-                <li>Credit to Joseph Brown for main menu music; (used with permission).</li>
-                <li>Radio music: https://www.youtube.com/watch?v=FV4DxR7TGOY</li>
-
-                <li>Quick Outline Effect by Chris Nolet: https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488</li>
-                <li>Voxel Optimization Tool: https://davidevofficial.itch.io/voxeloptimizer</li>
-
-                <li>Car Crash Sound 1: https://pixabay.com/sound-effects/car-accident-real-interior-46387/</li>
-                <li>Car Crash Sound 2: https://pixabay.com/sound-effects/car-crash-edit-two-92001/</li>
-                <li>Car Idle Sound: https://pixabay.com/sound-effects/diesel-truck-idling-frontwav-14418/</li>
-                <li>Stalker (Dark humanoid enemy) reference model: https://www.cgtrader.com/free-3d-models/architectural/decoration/screaming-statue</li>
-                <li>Stalker (Dark humanoid enemy) screech sound: https://freesound.org/people/Artninja/sounds/733955/</li>
-                <li>Lurker (Spider enemy) reference model: https://www.cgtrader.com/free-3d-print-models/miniatures/other/torture-spider-3d-printer-torture-test</li>
-                <li>Lurker (Spider enemy) hiss sound: https://freesound.org/people/Garuda1982/sounds/539299/</li>
-
-                <li>Player Vehicle Base Model: https://www.cadnav.com/3d-models/model-11252.html</li>
-                <li>Credit to TextStudio for main menu text tools: https://www.textstudio.com/</li>
-                <li>Credit to Textures4Photoshop for main menu text material textures https://www.textures4photoshop.com/tex/metal/old-rusted-metal-surface-texture.aspx#google_vignette</li>
-                <li>Hint font used in project: https://www.fonts4free.net/pixel-emulator-font.html</li>
-                <li>Radio Font: https://www.fontspace.com/digital-7-font-f7087</li>
-
-                <li>Credit to ChatGPT for general assistance in bug fixes and code discussion.</li>
-                <li>Credit to ElevenLabs AI for voice acting.</li>
-          
-            </ul>
-        </div>
-
-        <div class="tab-content" id="Ross-Datathon-content">
-            <h2>Michigan Ross Business+Tech Datathon</h2>
-
-            <img src="./assets/datathon.jpg" alt="datathon.png" height="315">
-            <p><a href="https://businesstech.bus.umich.edu/blog/2024-datathon-competition-targets-carbon-emissions-with-data-driven-approaches/" target="_blank" rel="noopener noreferrer">University of Michigan Business+Tech Article</a></p>
-            <p><a href="https://www.michigandaily.com/news/businesstech-hosts-seventh-annual-datathon/" target="_blank" rel="noopener noreferrer">The Michigan Daily Article</a></p>
-        </div>
-
-        <div class="tab-content" id="Move-Suggester-content">
-            <h2>Discord Bot Battle Move Suggester</h2>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GISEWVeABnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://github.com/Racekid16/gachaSuggestMoves" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
-        </div>
-
-        <div class="tab-content" id="Network-File-Server-content">
-            <h2>Multithreaded Network File Server</h2>
-        </div>
-
-        <div class="tab-content" id="MDST-Mining-content">
-            <h2>MDST Reddit Data Mining and Sentiment Analysis</h2>
-
-            <p><a href="https://github.com/svkislenkov/f24mdst" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
-        </div>
-
-        <div class="tab-content" id="My-Notes-content">
-            <h2>My Notes</h2>
-
-            <p><a href="https://github.com/Racekid16/University_of_Michigan_EECS_Lecture_Slides/tree/main/My%20miscellaneous%20notes" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
-        </div>
-
-    </div>
-
-</body>
+    </body>
 
 </html>

@@ -40,4 +40,14 @@ function updateContentPosition() {
 }
 
 /*------ Initial function calls on load ------*/
-updateContentPosition();
+$(document).ready(function () {
+    const hash = window.location.hash;
+
+    if (hash) {
+        console.log(hash);
+        const tabName = hash.substring(1);
+        toggleTab(tabName);
+    }
+
+    updateContentPosition();
+});
