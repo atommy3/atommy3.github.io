@@ -46,12 +46,20 @@
             <div class="tab-content" id="ROTC-Wargame-content">
                 <h2>University of Michigan ROTC Digital Wargame</h2>
 
+                <figure>
+                    <img src="./assets/wargame.jpg" class="image" alt="wargame.png">
+                    <figcaption><i>A screenshot of the user interface of the wargame for Gamemasters.</i></figcaption>
+                </figure>
+
                 <ul>
                     <li><a href="https://army.rotc.umich.edu/activity/wargame/" target="_blank" rel="noopener noreferrer">About the Wargame</a></li>
                     <li><a href="https://umichwargame.com/" target="_blank" rel="noopener noreferrer">Link to Wargame</a></li>
                 </ul>
 
                 <p>I collaborated primarily with Leo Intelisano and Jacob Tkaczyk on this project.</p>
+                <p>I worked on this project for an internship from June 2025 to January 2026. The main goal was to create a digital wargame to teach Rerserve Officers' Training Corps (ROTC) cadets about military strategy. The game is multiplayer and is designed to be played with over 100 concurrent users. An initial physical version was tested in the winter of 2025, but the effort to digitalize it was motivated by the difficulty to organize so many players and keep track of game state. </p>
+                <p>Two teams worked on this wargame. The first was the mechanics team, consisting of around 15 cadets, and overseen by Air Force major Buckner, Army captain Goldstein, and Navy lieutenant Nord. Their main responsibility was to design the rules, mechanics, and gameplay. The other team was the digitalization team, which I was a part of. It originally consisted of around 10 programmers, but most of them dropped the project by the time classes resumed in August, leaving just Jacob, Leo, and I to develop the game.</p>
+                <p>The game is very complex. </p>
             </div>
 
             <div class="tab-content" id="Final-Fumes-content">
@@ -65,7 +73,7 @@
 
                 <p>I collaborated with Isaiah Richards, Jagger Pacheco, and Thomas Dixon on this project.</p>
 
-                <p>This project was the primary deliverable for EECS 494, Introduction To Video Game Development, an intense MDE course at the University of Michigan. We were tasked with creating a full-fledged video game as a team in about 8 weeks. From the start, our team was very ambitious. Here are a few things that set us apart from others:</p>
+                <p>This project was the primary deliverable for EECS 494, Introduction To Video Game Development, an intense Major Design Experience (MDE) course at the University of Michigan. We were tasked with creating a full-fledged video game as a team in about 8 weeks. From the start, our team was very ambitious. Here are a few things that set us apart from others:</p>
                 <ul>
                     <li>We had only 4 members; most teams had 5</li>
                     <li>We did not base our game off of any of our previous projects</li>
@@ -136,19 +144,29 @@
             </div>
 
             <div class="tab-content" id="Network-File-Server-content">
-                <h2>Multithreaded Network File Server</h2>
+                <h2>Multi-threaded Network File Server</h2>
 
                 <p>I collaborated with Bennett Liyanto and NaveenJohn Premkumar on this project.</p>
+                <p>This project was the final project for EECS 494, Introduction To Operating Systems, an intense Upper-Level Computer Science (ULCS) course at the University of Michigan. Because it was an assignment, I cannot share the source code. We were tasked with creating a multi-threaded network file server in C++ using the Boost library. In short, the file server hosts files that users (called clients) can send messages to over a network using the websockets (TCP protocol). These messages can direct the server to read, write, create, or delete files. Crucially, there can be no race conditions; mutexes and condition variables are used to ensure there are no concurrent writes. However, the locking is fine-grained enough to allow for concurrent reads. Furthermore, the file system must stay consistent if, at any time, the system crashes.</p>
+                <p>This project was a challenging and fitting conclusion to a challenging course. It incorporated many elements that operating systems manage, including sockets, filesystems, crash consistency, and implementing abstractions that allow multiple processes or applications to use limited resources (such as hardware) effectively. </p>
+                
             </div>
 
             <div class="tab-content" id="MDST-Mining-content">
                 <h2>MDST Reddit Data Mining and Sentiment Analysis</h2>
+
+                <figure>
+                    <img src="./assets/MDST.png" class="image" alt="MDST.png">
+                    <figcaption><i>A plot our team created showing some correlation between sentinment and post upvote ratio.</i></figcaption>
+                </figure>
 
                 <ul>
                     <li><a href="https://github.com/svkislenkov/f24mdst" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
                 </ul>
 
                 <p>I collaborated with Andy Liang, Sergey Kislenkov, Toby Buckfire, and Vatsal Shah on this project.</p>
+                <p>This project was primary deliverable for the Mining & Analyzing Reddit team in the Michigan Data Science Team (MDST) club. We were tasked with creating a program that could scrape (i.e automatically exfiltrate data from) reddit.com, a social news aggregation and forum social media platform. Our team then chose to tune a machine learning model to analyze the sentiment of the scraped posts. We modified our algorithm until it was reasonably accurate at determining sentiment, and then created graphs to present our findings.</p>
+                <p>Initially, there were around 25 students on the Mining & Analyzing Reddit team, but by the end of the semester only my collaborators and I remained; our team had good chemistry and resolved to see the project through. The project proved to be an excellent opportunity to apply our knowledge of web technologies and machine learning to create something practical.</p>
             </div>
 
             <div class="tab-content" id="My-Notes-content">
