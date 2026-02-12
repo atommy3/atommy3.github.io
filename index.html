@@ -48,7 +48,7 @@
 
                 <figure>
                     <img src="./assets/wargame.jpg" class="image" alt="wargame.png">
-                    <figcaption><i>A screenshot of the user interface of the wargame for Gamemasters.</i></figcaption>
+                    <figcaption><i>A group of cadets playing the Wargame together on 1/25/26.</i></figcaption>
                 </figure>
 
                 <ul>
@@ -58,7 +58,7 @@
 
                 <p>I collaborated primarily with Leo Intelisano and Jacob Tkaczyk on this project.</p>
                 <p>I worked on this project for an internship from June 2025 to January 2026. The main goal was to create a digital wargame to teach Rerserve Officers' Training Corps (ROTC) cadets about military strategy. The game is multiplayer and is designed to be played with over 100 concurrent users. An initial physical version was tested in the winter of 2025, but the effort to digitalize it was motivated by the difficulty to organize so many players and keep track of game state.</p>
-                <p>Two teams worked on this wargame. The first was the mechanics team, consisting of around 15 cadets, and overseen by Air Force major Buckner, Army captain Goldstein, and Navy lieutenant Nord. Their main responsibility was to design the rules, mechanics, and gameplay. The other team was the digitalization team, which I was a part of. It originally consisted of around 10 programmers, but most of them dropped the project by the time classes resumed in August, leaving just Jacob, Leo, and I to code the game.</p>
+                <p>The team working on the wargame was referred to as the Joint Advanced Wargame Staff (JAWS), and comprised of two main subteams. The first was the mechanics team, consisting of around 15 cadets, and overseen by Air Force major Buckner, Army captain Goldstein, and Navy lieutenant Nord. Their main responsibility was to design the rules, mechanics, and gameplay. The other team was the digitalization team, which I was a part of. It originally consisted of around 10 programmers, but most of them dropped the project by the time classes resumed in August, leaving just Jacob, Leo, and I to code the game.</p>
                 <p>The website follows a modern microservices-inspired architecture with clear separation between frontend, backend, and infrastructure services. Next.js is used for the frotned, Django is used for the backend, Redis is used for the WebSocket server, and Neon (PostgreSQL) is used for the database. For hosting, we use an Nginx Reverse Proxy & Load Balancer and a Cloudflare tunnel.</p>
                 <p>We coded the website completely from scratch. Initially, my main role was to design and maintain the database, which I did, but I also assumed the responsibilities of coding the backend and WebSocket logic after the members originally assigned to those dropped out. I also contributed to the frontend, primarily where the frontend interacts with the backend. More specifically, I:</p>
                 <ul>
@@ -94,7 +94,7 @@
                 </ul>
 
                 <p>I collaborated with Isaiah Richards, Jagger Pacheco, and Thomas Dixon on this project.</p>
-                <p>This project was the primary deliverable for EECS 494, Introduction To Video Game Development, an intense Major Design Experience (MDE) course at the University of Michigan. We were tasked with creating a full-fledged video game as a team in about 8 weeks. From the start, our team was very ambitious. Here are a few things that set us apart from others:</p>
+                <p>This project was the primary deliverable for EECS 494, Computer Game Design and Development, an intense Major Design Experience (MDE) course at the University of Michigan. We were tasked with creating a full-fledged video game as a team in about 8 weeks. From the start, our team was very ambitious. Here are a few things that set us apart from others:</p>
                 <ul>
                     <li>We had only 4 members; most teams had 5</li>
                     <li>We did not base our game off of any of our previous projects</li>
@@ -147,7 +147,7 @@
 
                 <figure>
                     <img src="./assets/datathon.jpg" class="image" alt="datathon.png">
-                    <figcaption><i>Pictured from left to right: Julia Spilkin, Nolan Birkeland, Atul Gera, Makayla Beardsley, NaveenJohn Premkumar, Alan Tommy</i></figcaption>
+                    <figcaption><i>Pictured from left to right: Julia Spilkin, Nolan Birkeland, Atul Gera, Makayla Beardsley, NaveenJohn Premkumar, Alan Tommy on 2/12/24.</i></figcaption>
                 </figure>
                 
                 <ul>
@@ -157,7 +157,7 @@
                 </ul>
 
                 <p>I collaborated with Atul Gera, Julia Spilkin, Makayla Beardsley, NaveenJohn Premkumar, and Nolan Birkeland on this project.</p>
-                <p>The Business+Tech Datathon is an annual competition hosted by the Ross School of Business. Participants are given a large dataset, and then are tasked with analyzing the given data, identifying relevant business questions, and creating a presentation of our findings. For our year, we were provided greenhouse gas emission data by industry in different sectors.</p>
+                <p>The Business+Tech Datathon is an annual competition hosted by the Ross School of Business. Participants are given a large dataset, and have on week to analyze the given data, identify relevant business questions, and create a presentation of their findings. For our year, we were provided greenhouse gas emission data by industry in different sectors.</p>
                 <p>My friend Naveen invited me to participate in the competition with him, and I agreed. Teams varied in size from 2 to 6 members, and we combined with Julia, Nolan, Atul, and Makayla's group to form a group of 6. In total, there were over 40 teams.</p>
                 <p>From the start, it was clear that greenhouse gas emissions were high, and that we should figure out an economically viable way to help reduce those emissions. Ultimately, we proposed for Starbucks to serve their beverages in alternative cups, made primarily with hemp, that emit fewer greenhouse gases during manufacturing. My main responsibility was performing extensive analysis to estimate how much money it would cost to implement this idea, and to estimate how much greenhouse gas emissions would be reduced as a result.</p>
                 <p>Though our analysis was well-researched and thorough, what really set our team apart from the others was our communication skills. Our team created a beautiful, well-organized slide deck framing our idea as a business pitch that highlighted the benefits it would provide, and we presented it confidently. The panel of judges, consisting of university faculty and consultants at PwC and Deloitte, loved it. We earned first place first and the $3,000 grand prize. Notably, there were no graduate students on our team, and we were the first team ever to win the competition without a business major on the team.</p>
@@ -194,7 +194,7 @@
                 <h2>Multi-threaded Network File Server</h2>
 
                 <p>I collaborated with Bennett Liyanto and NaveenJohn Premkumar on this project.</p>
-                <p>This project was the final project for EECS 494, Introduction To Operating Systems, an intense Upper-Level Computer Science (ULCS) course at the University of Michigan. Because it was an assignment, I cannot share the source code. We were tasked with creating a multi-threaded network file server in C++ using the Boost library. In short, the file server hosts files that users (called clients) can send messages to over a network using a WebSocket (TCP protocol). These messages can direct the server to read, write, create, or delete files. Crucially, there can be no race conditions. Using reader and writer locks let us achieve more fine-grained control than normal mutexes, allowing for concurrent reads while prohibiting concurrent writes. Furthermore, the file system must stay consistent if, at any time, the system crashes.</p>
+                <p>This project was the final project for EECS 482, Introduction To Operating Systems, an intense Upper-Level Computer Science (ULCS) course at the University of Michigan. Because it was an assignment, I cannot share the source code. We were tasked with creating a multi-threaded network file server in C++ using the Boost library. In short, the file server hosts files that users (called clients) can send messages to over a network using a WebSocket (TCP protocol). These messages can direct the server to read, write, create, or delete files. Crucially, there can be no race conditions. Using reader and writer locks let us achieve more fine-grained control than normal mutexes, allowing for concurrent reads while prohibiting concurrent writes. Furthermore, the file system must stay consistent if, at any time, the system crashes.</p>
                 <p>This project was a challenging and fitting conclusion to a challenging course. It incorporated many elements that operating systems manage, including sockets, filesystems, crash consistency, and implementing abstractions to provide a simple interface hiding a more complicated reality.</p>
             </div>
 

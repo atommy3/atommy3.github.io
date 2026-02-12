@@ -19,8 +19,6 @@ figcaption {
 }
 
 .banner-header {
-    display: flex;
-    align-items: center; /* Align items vertically */
     margin: 0px 20px 0px 20px;
 }
 
