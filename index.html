@@ -194,7 +194,52 @@
                 <h2>Multi-threaded Network File Server</h2>
 
                 <p>I collaborated with Bennett Liyanto and NaveenJohn Premkumar on this project.</p>
-                <p>This project was the final project for EECS 482, Introduction To Operating Systems, an intense Upper-Level Computer Science (ULCS) course at the University of Michigan. Because it was an assignment, I cannot share the source code. We were tasked with creating a multi-threaded network file server in C++ using the Boost library. In short, the file server hosts files that users (called clients) can send messages to over a network using a WebSocket (TCP protocol). These messages can direct the server to read, write, create, or delete files. Crucially, there can be no race conditions. Using reader and writer locks let us achieve more fine-grained control than normal mutexes, allowing for concurrent reads while prohibiting concurrent writes. Furthermore, the file system must stay consistent if, at any time, the system crashes.</p>
+                <p>This project was the final project for EECS 482, Introduction To Operating Systems, an intense Upper-Level Computer Science (ULCS) course at the University of Michigan. Because it was an assignment, I cannot share the source code. We were tasked with creating a multi-threaded network file server in C++ using the Boost library. In short, the file server hosts files that users (called clients) can send messages to over a network using a WebSocket (TCP protocol). These messages can direct the server to read, write, create, or delete files. Here's an example client program.</p>
+                <pre>
+#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+#include &lt;cassert&gt;
+#include "fs_client.h"
+
+int main(int argc, char* argv[])
+{
+    char* server;
+    int server_port;
+
+    const char* writedata = "We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. -- That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, -- That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness.";
+
+    char readdata[FS_BLOCKSIZE];
+    int status;
+
+    if (argc != 3) {
+        std::cout &lt;&lt; "error: usage: " &lt;&lt; argv[0] &lt;&lt; " &lt;server&gt; &lt;serverPort&gt;\n";
+        exit(1);
+    }
+    server = argv[1];
+    server_port = atoi(argv[2]);
+
+    fs_clientinit(server, server_port);
+
+    status = fs_create("user1", "/dir", 'd');
+    assert(!status);
+
+    status = fs_create("user1", "/dir/file", 'f');
+    assert(!status);
+
+    status = fs_writeblock("user1", "/dir/file", 0, writedata);
+    assert(!status);
+
+    status = fs_readblock("user1", "/dir/file", 0, readdata);
+    assert(!status);
+
+    status = fs_delete("user1", "/dir/file");
+    assert(!status);
+
+    status = fs_delete("user1", "/dir");
+    assert(!status);
+}
+                </pre>
+                <p>Crucially, there could be no race conditions. Using reader and writer locks let us achieve more fine-grained control than normal mutexes, allowing for concurrent reads while prohibiting concurrent writes. Furthermore, the file system must stay consistent if, at any time, the system crashes.</p>
                 <p>This project was a challenging and fitting conclusion to a challenging course. It incorporated many elements that operating systems manage, including sockets, filesystems, crash consistency, and implementing abstractions to provide a simple interface hiding a more complicated reality.</p>
             </div>
 
